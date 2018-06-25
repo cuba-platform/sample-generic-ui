@@ -1,0 +1,6 @@
+rootProject.name = 'screen-manipulation'
+include(':app-global', ':app-core', ':app-web', ':app-web-themes')
+project(':app-global').projectDir = new File(settingsDir, 'modules/global')
+project(':app-core').projectDir = new File(settingsDir, 'modules/core')
+project(':app-web').projectDir = new File(settingsDir, 'modules/web')
+project(':app-web-themes').projectDir = new File(settingsDir, 'modules/web/themes')

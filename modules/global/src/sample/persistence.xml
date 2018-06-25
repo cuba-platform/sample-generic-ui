@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <persistence-unit name="screen-manipulation" transaction-type="RESOURCE_LOCAL">
+        <class>sample.entity.Customer</class>
+        <class>sample.entity.Order</class>
+        <class>sample.entity.OrderLine</class>
+        <class>sample.entity.Product</class>
+    </persistence-unit>
+</persistence>

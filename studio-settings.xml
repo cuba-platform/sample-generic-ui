@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<studio>
+    <settings>
+        <columnLengthOfEnums>50</columnLengthOfEnums>
+        <displayXmlAttributesOnSeparateLines>false</displayXmlAttributesOnSeparateLines>
+        <maxXmlLineLength>120</maxXmlLineLength>
+    </settings>
+    <functionalitySettings>
+        <functionality id="oneToOneIndex"
+                       state="ENABLE"/>
+        <functionality id="joinedInheritanceDeleteCascade"
+                       state="ENABLE"/>
+        <functionality id="newFkConstraintNaming"
+                       state="ENABLE"/>
+    </functionalitySettings>
+</studio>
