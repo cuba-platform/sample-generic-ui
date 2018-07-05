@@ -1,4 +1,4 @@
-# Working with Generic UI in CUBA Applications
+## Working with Generic UI in CUBA Applications
 
 This is a sample application accompanying the [Working with Generic UI](https://doc.cuba-platform.com/manual-latest/ui_recipes.html) cookbook section.
 

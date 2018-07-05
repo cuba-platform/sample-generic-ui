@@ -1,5 +1,6 @@
+
 buildscript {
-    ext.cubaVersion = '6.9.1'
+    ext.cubaVersion = '6.9.2'
     repositories {
         maven {
             url 'https://dl.bintray.com/cuba-platform/main'
@@ -29,7 +30,7 @@ apply(plugin: 'cuba')
 
 cuba {
     artifact {
-        group = 'sample'
+        group = 'com.company.sample'
         version = '0.1'
         isSnapshot = false
     }
@@ -116,7 +117,6 @@ configure(coreModule) {
 
     task createDb(dependsOn: assembleDbScripts, description: 'Creates local database', type: CubaDbCreation) {
         dbms = 'hsql'
-        dbmsVersion = 'null'
         host = 'localhost'
         dbName = 'sample'
         dbUser = 'sa'
@@ -125,7 +125,6 @@ configure(coreModule) {
 
     task updateDb(dependsOn: assembleDbScripts, description: 'Updates local database', type: CubaDbUpdate) {
         dbms = 'hsql'
-        dbmsVersion = 'null'
         host = 'localhost'
         dbName = 'sample'
         dbUser = 'sa'
@@ -157,7 +156,7 @@ configure(webModule) {
 
     task deployConf(type: Copy) {
         from file('src')
-        include "sample/**"
+        include "com/company/sample/**"
         into "$cuba.tomcat.dir/conf/app"
     }
 

@@ -1,4 +1,4 @@
-rootProject.name = 'screen-manipulation'
+rootProject.name = 'ui-recipes'
 include(':app-global', ':app-core', ':app-web', ':app-web-themes')
 project(':app-global').projectDir = new File(settingsDir, 'modules/global')
 project(':app-core').projectDir = new File(settingsDir, 'modules/core')

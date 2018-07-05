@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <studio>
     <settings>
-        <columnLengthOfEnums>50</columnLengthOfEnums>
-        <displayXmlAttributesOnSeparateLines>false</displayXmlAttributesOnSeparateLines>
-        <maxXmlLineLength>120</maxXmlLineLength>
+        <hotDeployMapping>modules/global/src:conf/model-core</hotDeployMapping>
+        <hotDeployMapping>modules/core/src:conf/model-core</hotDeployMapping>
+        <hotDeployMapping>modules/global/src:conf/model</hotDeployMapping>
+        <hotDeployMapping>modules/web/src:conf/model</hotDeployMapping>
+        <hotDeployMapping>modules/gui/src:conf/model</hotDeployMapping>
     </settings>
     <functionalitySettings>
         <functionality id="oneToOneIndex"

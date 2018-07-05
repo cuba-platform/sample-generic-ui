@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee" version="3.0">
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
     <context-param>
         <description>Web resources version for correct caching in browser</description>
         <param-name>webResourcesTs</param-name>
@@ -9,10 +11,17 @@
     <!-- Application properties config files -->
     <context-param>
         <param-name>appPropertiesConfig</param-name>
-        <param-value>classpath:sample/web-app.properties
+        <param-value>classpath:com/company/sample/web-app.properties
             /WEB-INF/local.app.properties
             "file:${catalina.home}/conf/app/local.app.properties"</param-value>
     </context-param>
+    <context-param>
+        <param-name>appComponents</param-name>
+        <param-value>com.haulmont.addon.samplebase</param-value>
+    </context-param>
+    <listener>
+        <listener-class>com.vaadin.server.communication.JSR356WebsocketInitializer</listener-class>
+    </listener>
     <listener>
         <listener-class>com.haulmont.cuba.web.sys.WebAppContextLoader</listener-class>
     </listener>
@@ -47,10 +56,6 @@
         <filter-name>cuba_filter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
-    <context-param>
-        <param-name>appComponents</param-name>
-        <param-value>com.haulmont.cuba com.haulmont.addon.samplebase</param-value>
-    </context-param>
     <servlet>
         <servlet-name>rest_api</servlet-name>
         <servlet-class>com.haulmont.restapi.sys.CubaRestApiServlet</servlet-class>
