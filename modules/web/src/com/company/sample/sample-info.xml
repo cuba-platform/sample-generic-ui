@@ -16,6 +16,8 @@
         <doc caption="Recipe: Returning Values from an Invoked Screen" page="screen_params_return" style="highlight"/>
         <descriptor/>
         <controller/>
+        <file path="modules/web/src/com/company/sample/web/order/quantity-dialog.xml"/>
+        <file path="modules/web/src/com/company/sample/web/order/QuantityDialog.java"/>
     </screen>
     <screen id="sample$Customer.browse">
         <doc caption="Recipe: One-to-One Composition with a Single Editor" page="oto_single_editor.html"

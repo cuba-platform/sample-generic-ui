@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <menu-config xmlns="http://schemas.haulmont.com/cuba/menu.xsd">
-    <menu id="pass-params"
-          insertBefore="administration">
-        <item id="sample$Order.browse"/>
-    </menu>
-    <menu id="pass-picker">
-        <item screen="sample$Product.browse"/>
-    </menu>
-    <menu id="return-params">
-        <item screen="sample$Order.browse2"/>
-    </menu>
-    <menu id="oto-editor">
-        <item screen="sample$Customer.browse"/>
-    </menu>
+    <item id="pass-params" screen="sample$Order.browse" insertBefore="administration"/>
+    <item id="pass-picker" screen="sample$Product.browse"/>
+    <item id="return-params" screen="sample$Order.browse2"/>
+    <item id="oto-editor" screen="sample$Customer.browse"/>
 </menu-config>
