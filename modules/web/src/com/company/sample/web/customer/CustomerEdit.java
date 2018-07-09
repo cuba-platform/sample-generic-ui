@@ -33,12 +33,6 @@ public class CustomerEdit extends AbstractEditor<Customer> {
     }
 
     @Override
-    protected void postInit() {
-        // Makes the nested detailsDs datasource track and save changes in the CustomerDetails instance alongside with the edited Customer instance
-        detailsDs.setItem(getItem().getDetails());
-    }
-
-    @Override
     public boolean isModified() {
         // Prevents showing "do you want to save changes?" dialog window in case only the nested CustomerDetails is created while the Customer is not
         return customerDs.isModified();

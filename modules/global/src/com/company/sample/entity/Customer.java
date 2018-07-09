@@ -11,6 +11,7 @@ import com.haulmont.cuba.core.global.DeletePolicy;
 import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
+import javax.validation.constraints.NotNull;
 
 @NamePattern("%s|name")
 @Table(name = "SAMPLE_CUSTOMER")
@@ -18,7 +19,8 @@ import javax.persistence.OneToOne;
 public class Customer extends StandardEntity {
     private static final long serialVersionUID = 738326219647053638L;
 
-    @Column(name = "NAME")
+    @NotNull
+    @Column(name = "NAME", nullable = false)
     protected String name;
 
     @Column(name = "EMAIL", length = 100)

@@ -9,7 +9,7 @@ create table SAMPLE_CUSTOMER (
     DELETE_TS timestamp,
     DELETED_BY varchar(50),
     --
-    NAME varchar(255),
+    NAME varchar(255) not null,
     EMAIL varchar(100),
     DETAILS_ID varchar(36),
     --
