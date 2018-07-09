@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          version="3.0">
     <!-- Application properties config files -->
@@ -7,7 +8,7 @@
         <param-name>appPropertiesConfig</param-name>
         <param-value>classpath:com/company/sample/app.properties
             /WEB-INF/local.app.properties
-            "file:${catalina.home}/conf/app-core/local.app.properties"</param-value>
+            "file:${catalina.home}/conf/generic-ui-core/local.app.properties"</param-value>
     </context-param>
     <listener>
         <listener-class>com.haulmont.cuba.core.sys.AppContextLoader</listener-class>

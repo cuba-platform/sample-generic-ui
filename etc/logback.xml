@@ -2,7 +2,7 @@
 
 <configuration debug="false">
 
-    <property name="logDir" value="${app.home}/model.logs"/>
+    <property name="logDir" value="${app.home}/generic-ui.logs"/>
 
     <appender name="File" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${logDir}/app.log</file>

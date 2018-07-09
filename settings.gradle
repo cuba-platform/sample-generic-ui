@@ -1,6 +1,7 @@
-rootProject.name = 'ui-recipes'
-include(':app-global', ':app-core', ':app-web', ':app-web-themes')
-project(':app-global').projectDir = new File(settingsDir, 'modules/global')
-project(':app-core').projectDir = new File(settingsDir, 'modules/core')
-project(':app-web').projectDir = new File(settingsDir, 'modules/web')
-project(':app-web-themes').projectDir = new File(settingsDir, 'modules/web/themes')
+rootProject.name = 'sample-generic-ui'
+def modulePrefix = 'generic-ui'
+include(":${modulePrefix}-global", ":${modulePrefix}-core", ":${modulePrefix}-web", ":${modulePrefix}-web-themes")
+project(":${modulePrefix}-global").projectDir = new File(settingsDir, 'modules/global')
+project(":${modulePrefix}-core").projectDir = new File(settingsDir, 'modules/core')
+project(":${modulePrefix}-web").projectDir = new File(settingsDir, 'modules/web')
+project(":${modulePrefix}-web-themes").projectDir = new File(settingsDir, 'modules/web/themes')
