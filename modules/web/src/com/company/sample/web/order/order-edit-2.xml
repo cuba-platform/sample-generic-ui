@@ -22,32 +22,37 @@
     </dsContext>
     <dialogMode height="600"
                 width="800"/>
-    <layout expand="windowActions"
+    <layout expand="orderLinesBox"
             spacing="true">
-        <split orientation="horizontal"
-               width="100%">
-            <vbox spacing="true"
-                  width="300px">
-                <textField id="numField"
-                           caption="msg://order.num"
-                           datasource="orderDs"
-                           property="num"
-                           width="100%"/>
-                <lookupField id="customerField"
-                             caption="msg://order.customer"
-                             datasource="orderDs"
-                             optionsDatasource="customersDs"
-                             property="customer"
-                             width="100%"/>
-            </vbox>
-            <datePicker id="datePicker"
-                        caption="msg://order.date"
-                        datasource="orderDs"
-                        property="date"/>
-        </split>
+        <grid spacing="true"
+              width="600px">
+            <columns count="2"/>
+            <rows>
+                <row>
+                    <textField id="numField"
+                               caption="msg://order.num"
+                               datasource="orderDs"
+                               property="num"
+                               width="100%"/>
+                    <lookupField id="customerField"
+                                 caption="msg://order.customer"
+                                 datasource="orderDs"
+                                 optionsDatasource="customersDs"
+                                 property="customer"
+                                 width="100%"/>
+                </row>
+                <row>
+                    <datePicker id="datePicker"
+                                caption="msg://order.date"
+                                colspan="2"
+                                datasource="orderDs"
+                                property="date"
+                                width="100%"/>
+                </row>
+            </rows>
+        </grid>
         <groupBox id="orderLinesBox"
                   caption="msg://order.lines"
-                  height="600px"
                   width="600px">
             <table id="orderLinesTable"
                    height="100%"
