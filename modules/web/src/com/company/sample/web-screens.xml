@@ -12,8 +12,12 @@
             template="com/company/sample/web/order/order-browse.xml"/>
     <screen id="sample$Order.browse2"
             template="com/company/sample/web/order/order-browse.xml"/>
+    <screen id="sample$Order.browse3"
+            template="com/company/sample/web/order/order-browse-3.xml"/>
     <screen id="sample$Order.edit"
             template="com/company/sample/web/order/order-edit.xml"/>
+    <screen id="sample$Order.edit2"
+            template="com/company/sample/web/order/order-edit-2.xml"/>
     <screen id="sample$OrderLine.edit"
             template="com/company/sample/web/orderline/order-line-edit.xml"/>
     <screen id="quantity-dialog"
