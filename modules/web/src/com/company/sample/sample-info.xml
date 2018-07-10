@@ -58,5 +58,15 @@
         <descriptor/>
         <controller/>
     </screen>
+    <screen id="sample$Order.browse3">
+        <doc caption="Recipe: Screen with Individual Fields instead of FieldGroup" page="inividual_fields_recipe.html"
+             style="highlight"/>
+        <file path="modules/web/src/com/company/sample/web/order/order-edit-2.xml"/>
+    </screen>
+    <screen id="sample$Order.edit2">
+        <doc caption="Recipe: Screen with Individual Fields instead of FieldGroup" page="inividual_fields_recipe.html"
+             style="highlight"/>
+        <descriptor/>
+    </screen>
 </sample-info>
 
