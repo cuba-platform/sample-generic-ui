@@ -7,13 +7,11 @@
         <doc caption="Recipe: Passing Parameters to a Screen" page="screen_params_recipe.html" style="highlight"/>
     </screen>
     <screen id="sample$Order.browse2">
-        <doc caption="Recipe: Returning Values from an Invoked Screen" page="screen_params_return" style="highlight"/>
+        <doc caption="Recipe: Returning Values from an Invoked Screen" page="screen_params_return.html" style="highlight"/>
     </screen>
     <screen id="sample$Order.edit">
         <doc caption="Recipe: Passing Parameters to a Screen" page="screen_params_recipe.html" style="highlight"/>
-        <doc caption="Recipe: Passing Parameters with a PickerField" page="screen_params_recipe_picker.html"
-             style="highlight"/>
-        <doc caption="Recipe: Returning Values from an Invoked Screen" page="screen_params_return" style="highlight"/>
+        <doc caption="Recipe: Returning Values from an Invoked Screen" page="screen_params_return.html" style="highlight"/>
         <descriptor/>
         <controller/>
         <file path="modules/web/src/com/company/sample/web/order/quantity-dialog.xml"/>
@@ -26,12 +24,12 @@
         <file path="modules/web/src/com/company/sample/web/customer/CustomerEdit.java"/>
     </screen>
     <screen id="sample$Customer.browse2">
-        <doc caption="Recipe: Returning Values from an Invoked Screen" page="screen_params_return" style="highlight"/>
+        <doc caption="Recipe: Returning Values from an Invoked Screen" page="screen_params_return.html" style="highlight"/>
         <file path="modules/web/src/com/company/sample/web/order/order-edit.xml"/>
         <file path="modules/web/src/com/company/sample/web/order/OrderEdit.java"/>
     </screen>
     <screen id="customer-list">
-        <doc caption="Recipe: Returning Values from an Invoked Screen" page="screen_params_return" style="highlight"/>
+        <doc caption="Recipe: Returning Values from an Invoked Screen" page="screen_params_return.html" style="highlight"/>
         <file path="modules/web/src/com/company/sample/web/order/order-edit.xml"/>
         <file path="modules/web/src/com/company/sample/web/order/OrderEdit.java"/>
     </screen>
@@ -42,7 +40,7 @@
         <controller/>
     </screen>
     <screen id="sample$Product.browse">
-        <doc caption="Recipe: Passing Parameters with a PickerField" page="screen_params_recipe_picker.html"
+        <doc caption="Recipe: Passing Parameters to a Screen" page="screen_params_recipe.html"
              style="highlight"/>
         <file path="modules/web/src/com/company/sample/web/product/product-edit.xml"/>
         <file path="modules/web/src/com/company/sample/web/product/ProductEdit.java"/>
@@ -53,7 +51,7 @@
         <file path="modules/web/src/com/company/sample/web/order/OrderEdit.java"/>
     </screen>
     <screen id="sample$Product.edit">
-        <doc caption="Recipe: Passing Parameters with a PickerField" page="screen_params_recipe_picker.html"
+        <doc caption="Recipe: Passing Parameters to a Screen" page="screen_params_recipe.html"
              style="highlight"/>
         <descriptor/>
         <controller/>
